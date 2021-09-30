@@ -36,11 +36,11 @@ input {
   header {
     background: #6700ee;
     display: grid;
-    grid-template-columns: 5vw 10vw;
+    grid-template-columns: 12vw 10vw;
     gap: 3vw;
     padding-left: 12vw;
     align-items: center;
-    justify-items: center;
+    justify-items: start;
 
     a {
       color: #00f7ff;

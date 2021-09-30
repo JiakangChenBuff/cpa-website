@@ -39,14 +39,14 @@ input {
   background: #6700ee;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5vw 10vw;
-      grid-template-columns: 5vw 10vw;
+  -ms-grid-columns: 12vw 10vw;
+      grid-template-columns: 12vw 10vw;
   gap: 3vw;
   padding-left: 12vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  justify-items: start;
 }
 
 .nav-container header a {

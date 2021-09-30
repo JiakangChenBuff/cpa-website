@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engage4Change</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-container">
+            <header>
+                <a href="index.html" class="logo">Engage4Change</a>
+                <a class="two" href="articles.html">Articles</a>
+            </header>
+            <div class="social-header">
+                <ul>
+                    <li>
+                        <a href="#discord">
+                            <img src="images/discord-logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/google-logo.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/instagram-logo.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="compete-hero">
+            <div class="content transition1">
+                <h1 class="stagger1">
+                    Articles
+                </h1>
+                <div class="meet stagger1">
+                    <p>Browse our articles or search for a specific one!</p>
+                </div>
+                <svg class="scroll stagger1" width="40" height="69" viewBox="0 0 40 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle" cx="20" cy="21" r="10" fill="white" />
+                    <rect x="3.5" y="3.5" width="33" height="62" rx="16.5" stroke="white" stroke-width="7" />
+                </svg>
+            </div>
+        
+        </div>
+
+        <div class="compete-container">
+
+            <div class="search-wrapper stagger1">
+
+                <img class="search-icon" src="images/search.svg" alt="">
+
+                <input type="text" name="search-bar" id="search-bar" placeholder="Search articles">
+
+            </div>
+
+            <ul id="competition-list">
+
+            </ul>
+
+        </div>
+
+        <div class="footer-container">
+            <header>
+                <a href="index.html">Engage4Change</a>
+                <a href="articles.html" class="two" style="margin-left: 5vw;">Articles</a>
+            </header>
+            <div class="footer-design-container">
+                <svg class="footer-design" width="521" height="484" viewBox="0 0 521 484" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect class="footer-anim" x="317" width="161" height="161" rx="19" fill="#6E00FF" />
+                    <rect class="footer-anim" x="317" y="317" width="161" height="161" rx="19" fill="#6E00FF"
+                        fill-opacity="0.8" />
+                    <rect class="footer-anim" x="473" y="156" width="161" height="161" rx="19" fill="white"
+                        fill-opacity="0.75" />
+                    <rect class="footer-anim" x="156" y="159" width="161" height="161" rx="19" fill="white" />
+                    <rect class="footer-anim" x="156" y="476" width="161" height="161" rx="19" fill="white" />
+                    <rect class="footer-anim" y="317" width="161" height="161" rx="19" fill="white" fill-opacity="0.29" />
+                    <circle class="footer-anim" cx="395" cy="239" r="78" fill="#FF64CB" />
+                    <circle class="footer-anim" cx="239" cy="398" r="78" fill="#00F7FF" fill-opacity="0.8" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="overlay"></div>
+
+    <div id="modals"></div>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+        integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var tl = gsap.timeline();
+
+        tl.from('.transition1', {
+            y: '-30%',
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        });
+
+        tl.from('.stagger1', {
+            opacity: 0,
+            y: -50,
+            stagger: .2,
+            ease: Power4.easeOut,
+            duration: 2
+        }, "-=1.5");
+
+        tl.from('.transition4', {
+            opacity: 0,
+            x: 200,
+            ease: Power4.easeOut,
+            duration: 1
+        }, "-=2");
+
+        tl.from('.transition5', {
+            opacity: 0,
+            y: -50,
+            stagger: 0,
+            ease: Power4.easeOut,
+            duration: 1,
+        }, "-=1.7");
+
+        gsap.from(".square-anim", {
+            stagger: 0.2,
+            scale: 0.1,
+            duration: 1,
+            ease: Back.easeOut.config(1.7)
+        });
+
+        gsap.from(".transition2", {
+            scrollTrigger: {
+                trigger: ".transition2",
+                start: "top center"
+            },
+            y: 100,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .15
+        });
+
+        gsap.from(".transition3", {
+            scrollTrigger: {
+                trigger: ".transition3",
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: .6
+        });
+
+        gsap.from(".footer-anim", {
+            scrollTrigger: {
+                trigger: ".footer-anim",
+                start: "top bottom"
+            },
+            stagger: 0.1,
+            scale: 0.1,
+            duration: 0.5,
+            ease: Back.easeOut.config(1)
+        })
+
+    </script>
+
+</body>
+</html>

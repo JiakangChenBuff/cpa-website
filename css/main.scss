@@ -34,7 +34,7 @@ input {
   z-index: 1;
 
   header {
-    background: #6700ee;
+    background: #fd6e70;
     display: grid;
     grid-template-columns: 12vw 10vw;
     gap: 3vw;
@@ -43,7 +43,7 @@ input {
     justify-items: start;
 
     a {
-      color: #00f7ff;
+      color: white;
       font-size: 1.2vw;
       font-weight: bold;
     }
@@ -78,7 +78,7 @@ input {
 
   .content {
     padding-left: 12vw;
-    background: #6e00ff;
+    background: #fd7d7e;
     padding-top: 8vw;
 
     h1 {
@@ -89,7 +89,7 @@ input {
 
     .meet {
       margin-top: 4.5vw;
-      color: #ff64cb;
+      color: white;
       font-weight: bold;
       font-size: 1.2vw;
     }
@@ -150,7 +150,8 @@ input {
     justify-self: right;
     align-self: center;
     width: 20vw;
-    padding-right: 12vw;
+    margin-right: 12vw;
+    border-radius: 1vw;
   }
 }
 
@@ -160,14 +161,14 @@ input {
   width: 50vw;
   height: 50vw;
   border-radius: 50%;
-  background: #efd1ff;
+  background: #cbe6e8;
   top: -8vw;
   left: -10vw;
   z-index: -1;
 }
 
 .skills {
-  background: #ff64cb;
+  background: #f9d75e;
   padding-top: 3vw;
   padding-left: 12vw;
   padding-right: 12vw;
@@ -241,7 +242,7 @@ input {
       font-size: 1vw;
       text-transform: uppercase;
       font-weight: bold;
-      color: #6e00ff;
+      color: #fd6e70;
       margin-bottom: 0.5vw;
     }
 
@@ -259,7 +260,7 @@ input {
       position: relative;
 
       a {
-        color: #6e00ff;
+        color: #fd6e70;
       }
     }
 
@@ -275,7 +276,7 @@ input {
   width: 90vw;
   height: 90vw;
   border-radius: 50%;
-  background: #ffd2f0;
+  background: #cbe6e8;
   top: 20vw;
   left: 30vw;
   z-index: -1;
@@ -288,7 +289,7 @@ input {
   z-index: 0;
 
   header {
-    background: #6700ee;
+    background: #fd7d7e;
     display: grid;
     grid-template-columns: 5vw 10vw;
     gap: 3vw;
@@ -296,7 +297,7 @@ input {
     align-items: center;
 
     a {
-      color: #00f7ff;
+      color: white;
       font-size: 1.2vw;
       font-weight: bold;
     }
@@ -309,7 +310,7 @@ input {
   }
 
   .footer-design-container {
-    background: #6700ee;
+    background: #fd7d7e;
     display: grid;
     justify-items: end;
 
@@ -328,7 +329,7 @@ input {
 
   .content {
     padding-left: 12vw;
-    background: #6e00ff;
+    background: #fd7d7e;
     padding-top: 4.5vw;
 
     h1 {
@@ -339,7 +340,7 @@ input {
 
     .meet {
       margin-top: 4.5vw;
-      color: #ff64cb;
+      color: white;
       font-weight: bold;
       font-size: 1.2vw;
     }
@@ -371,7 +372,7 @@ input {
   width: 60vw;
   height: 60vw;
   border-radius: 50%;
-  background: #ffd2f0;
+  background: #cbe6e8;
   top: -20vw;
   left: 79vw;
   z-index: -1;

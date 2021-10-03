@@ -36,7 +36,7 @@ input {
 }
 
 .nav-container header {
-  background: #6700ee;
+  background: #fd6e70;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 12vw 10vw;
@@ -50,7 +50,7 @@ input {
 }
 
 .nav-container header a {
-  color: #00f7ff;
+  color: white;
   font-size: 1.2vw;
   font-weight: bold;
 }
@@ -90,7 +90,7 @@ input {
 
 .hero .content {
   padding-left: 12vw;
-  background: #6e00ff;
+  background: #fd7d7e;
   padding-top: 8vw;
 }
 
@@ -102,7 +102,7 @@ input {
 
 .hero .content .meet {
   margin-top: 4.5vw;
-  color: #ff64cb;
+  color: white;
   font-weight: bold;
   font-size: 1.2vw;
 }
@@ -167,7 +167,8 @@ input {
       -ms-grid-row-align: center;
       align-self: center;
   width: 20vw;
-  padding-right: 12vw;
+  margin-right: 12vw;
+  border-radius: 1vw;
 }
 
 .featured::before {
@@ -176,14 +177,14 @@ input {
   width: 50vw;
   height: 50vw;
   border-radius: 50%;
-  background: #efd1ff;
+  background: #cbe6e8;
   top: -8vw;
   left: -10vw;
   z-index: -1;
 }
 
 .skills {
-  background: #ff64cb;
+  background: #f9d75e;
   padding-top: 3vw;
   padding-left: 12vw;
   padding-right: 12vw;
@@ -278,7 +279,7 @@ input {
   font-size: 1vw;
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e00ff;
+  color: #fd6e70;
   margin-bottom: 0.5vw;
 }
 
@@ -297,7 +298,7 @@ input {
 }
 
 .portfolio .portfolio-container .featured-desc a {
-  color: #6e00ff;
+  color: #fd6e70;
 }
 
 .portfolio .portfolio-container .bottom {
@@ -310,7 +311,7 @@ input {
   width: 90vw;
   height: 90vw;
   border-radius: 50%;
-  background: #ffd2f0;
+  background: #cbe6e8;
   top: 20vw;
   left: 30vw;
   z-index: -1;
@@ -326,7 +327,7 @@ input {
 }
 
 .footer-container header {
-  background: #6700ee;
+  background: #fd7d7e;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5vw 10vw;
@@ -339,7 +340,7 @@ input {
 }
 
 .footer-container header a {
-  color: #00f7ff;
+  color: white;
   font-size: 1.2vw;
   font-weight: bold;
 }
@@ -351,7 +352,7 @@ input {
 }
 
 .footer-container .footer-design-container {
-  background: #6700ee;
+  background: #fd7d7e;
   display: -ms-grid;
   display: grid;
   justify-items: end;
@@ -373,7 +374,7 @@ input {
 
 .compete-hero .content {
   padding-left: 12vw;
-  background: #6e00ff;
+  background: #fd7d7e;
   padding-top: 4.5vw;
 }
 
@@ -385,7 +386,7 @@ input {
 
 .compete-hero .content .meet {
   margin-top: 4.5vw;
-  color: #ff64cb;
+  color: white;
   font-weight: bold;
   font-size: 1.2vw;
 }
@@ -417,7 +418,7 @@ input {
   width: 60vw;
   height: 60vw;
   border-radius: 50%;
-  background: #ffd2f0;
+  background: #cbe6e8;
   top: -20vw;
   left: 79vw;
   z-index: -1;
